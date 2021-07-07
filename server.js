@@ -21,7 +21,7 @@ const startMenu = () => {
   inquirer.prompt({
     type: 'list',
     name: 'selectAction',
-    message: 'What would you like to do?',
+    message: 'Pick an option',
     choices: ['Departments', 'Roles', 'Employees','Add Departments', 'Add Roles', 'Add Employees', 'Update Employee Roles', 'Delete Departments', 'Delete Roles', 'Delete Employees']
   }).then(action => {
         action = action.selectAction
