@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../../db/connects');
-const checkInput = require('../../utils/Input');
+const db = require('../../db/connect');
+const checkInput = require('../../utils/input');
 
 //get all roles
 router.get('/roles',(req, res) => {

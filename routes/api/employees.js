@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../../db/connection');
-const checkInput = require('../../utils/checkInput');
+const db = require('../../db/connect');
+const checkInput = require('../../utils/input');
 
 //get all employees
 router.get('/employees', (req, res) => {
