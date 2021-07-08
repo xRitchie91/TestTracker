@@ -7,8 +7,8 @@ const { connect } = require('./db/connect');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-const db = require('./db/connection')
-const apiRoutes = require('./routes/apiRoutes')
+const db = require('./db/connect')
+const apiRoutes = require('./routes/api')
 
 //middleware
 app.use(express.urlencoded({ extended: false}));
